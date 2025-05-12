@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "594375570551",
+    "project_id": "electricity-bill-notifications",
+    "storage_bucket": "electricity-bill-notifications.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594375570551:android:9d512ef687dd317b964272",
+        "android_client_info": {
+          "package_name": "com.example.customer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAc9DKBcRpptF4gMbD_LAqa4D9ZyUwzTmk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594375570551:android:5bb73f9b522cfd26964272",
+        "android_client_info": {
+          "package_name": "com.example.this_is_tayrd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAc9DKBcRpptF4gMbD_LAqa4D9ZyUwzTmk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
