@@ -89,14 +89,23 @@ async{
 }
 
 
-void addNewReading({required String previousReading,required String currentReading,required String totalDuesInThisReading,required String electronicMeterID})
+void addNewReading({required String ? previousReading,required String currentReading,required String totalDuesInThisReading,required String electronicMeterID})
 async{
   emit(TakeReadingLoadingAddNewReading());
   bool checkInternt= await Api().checkInternet();
+   double previousReadingDouble;
    if(checkInternt)
    {
      try{
-        double previousReadingDouble = double.parse(previousReading);
+      if(previousReading =="null")
+      {
+        previousReadingDouble =   0.0;
+      }
+      else
+      {
+        previousReadingDouble =   double.parse(previousReading!);
+      }
+       
         double currentReadingDouble = double.parse(currentReading);
         if(previousReadingDouble > currentReadingDouble)
         {
@@ -105,7 +114,7 @@ async{
         }
 
 
-       bool data = await AddNewReading().addNewReadingMeth(previousReading: previousReading, currentReading: currentReading, totalDuesInThisReading: totalDuesInThisReading, readingImage: originalImageFile!, electronicMeterID: electronicMeterID);
+       bool data = await AddNewReading().addNewReadingMeth(previousReading: previousReading??0.toString(), currentReading: currentReading, totalDuesInThisReading: totalDuesInThisReading, readingImage: originalImageFile!, electronicMeterID: electronicMeterID);
        if(data)
        {
          emit(TakeReadingSuccessfullyAddNewReading());

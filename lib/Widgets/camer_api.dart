@@ -2,7 +2,8 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
-import 'dart:ui' as ui;
+import 'dart:ui';
+
 
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +27,7 @@ class _AdvancedMeterReaderState extends State<AdvancedMeterReader> {
   File? _image;
   String _reading = '';
   bool _isProcessing = false;
-  ui.Image? _processedImage;
+Image? _processedImage;
   final _textRecognizer = TextRecognizer(script: TextRecognitionScript.latin);
   final String _apiKey = 'AIzaSyBHFJmW764A9I332HQoTqivQYUcgTdoCQY';
 

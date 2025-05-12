@@ -5,5 +5,5 @@ const kColorSecond = Color(0xff1976D2);
 const kColorThreed = Color(0xff42A5F5);
 const kColorFoured = Color(0xffBBDEFB);
 //const kUrl="http://10.0.2.2/powerStationDB/collector/";
-const kUrl="http://192.168.1.6/powerStationDB/collector/";
+const kUrl="http://192.168.8.197/powerStationDB/collector/";
 const kUrlCheckInternet='https://www.gstatic.com/generate_204';
