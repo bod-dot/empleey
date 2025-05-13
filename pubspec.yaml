@@ -60,6 +60,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
   modal_progress_hud_nsn: ^0.5.1
+  tflite_v2: ^1.0.0
   
 
 dev_dependencies:
